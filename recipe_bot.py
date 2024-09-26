@@ -21,7 +21,15 @@ def get_recipes_by_ingredients(ingredients, preference):
     if response.status_code == 200:
         recipes = response.json()
         if isinstance(recipes, list):
-            return recipes
+            print("Recipes fetched!")
+
+            for recipe in recipes:
+                missing_ingredients_count= len(recipe.get('missedIngredients', []))
+                print(f"Recipe: {recipe['title']} | Missing Ingredients: {missing_ingredients_count}")
+
+            #sorting the recipes
+            sorted_recipes = sorted(recipes, key=lambda r: r.get('missedIngredientCount', 0))
+            return sorted_recipes
         else:
             print("Unexpected response format:", recipes)
             return []
@@ -98,7 +106,7 @@ def handle_user_input(message):
             'step': 'waiting_for_preferences',
             'ingredients': ingredients
         }
-        bot.send_message(chat_id, "Do you have any dietary preferences? (e.g., vegetarian, vegan, gluten-free)")
+        bot.send_message(chat_id, "Do you have any dietary preferences? (e.g., none, vegetarian, vegan, gluten-free)")
     
     elif user_state.get(chat_id) and user_state[chat_id]['step'] == 'waiting_for_preferences':
         dietary_preference = message.text.lower()
