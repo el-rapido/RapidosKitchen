@@ -1,6 +1,6 @@
 # WORK IN PROGRESS
 
-RecipeBot is a Python-based Telegram bot that helps users discover and manage recipes tailored to their available ingredients. It integrates with the Spoonacular API to provide features such as recipe suggestions, nutritional information, and a personalized cooking experience.
+RapidosKitchen is a Python-based Telegram bot that helps users discover and manage recipes tailored to their available ingredients. It integrates with the Spoonacular API to provide features such as recipe suggestions, nutritional information, and a personalized cooking experience.
 
 # Features
 Ingredient-Based Recipe Search: Enter available ingredients, and the bot suggests recipes that match, ranked by the number of missing ingredients.
