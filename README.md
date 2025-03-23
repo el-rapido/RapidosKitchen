@@ -14,9 +14,7 @@ RapidosKitchen is perfect for home cooks looking to maximize their pantry, reduc
 
 # Tech Stack
 Language: Python
-Libraries:
-pyTelegramBotAPI
-Requests
+Libraries:pyTelegramBotAPI, Requests
 API: Spoonacular API
 
 # Future Features
