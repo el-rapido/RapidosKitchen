@@ -9,8 +9,8 @@ Sorted Recipe Suggestions: Recipes are displayed in order of how closely they ma
 Interactive Commands: Designed for seamless interaction through Telegram commands like /nutrition and /findrecipes.
 Extensible Design: Built with Python and the pyTelegramBotAPI library, making it modular and easy to enhance.
 
-# Why Use RecipeBot?
-RecipeBot is perfect for home cooks looking to maximize their pantry, reduce food waste, and discover new dishes.
+# Why Use RapidosKitchen?
+RapidosKitchen is perfect for home cooks looking to maximize their pantry, reduce food waste, and discover new dishes.
 
 # Tech Stack
 Language: Python
