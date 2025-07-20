@@ -19,3 +19,27 @@ API: Spoonacular API
 Generate a grocery list for recipes.
 Allow users to save favorite recipes.
 Recipe filtering (e.g., by cuisine or dietary preferences).
+
+## Deployment Instructions
+
+To deploy this Recipe Bot, follow these steps:
+
+### 1. Set Up Environment Variables:
+- Create an API key through Teleram Bot Father.
+- Add the following line to store your **Telegram API key* in the code:
+  ```plaintext
+  TELEGRAM_API_KEY=your_telegram_api_key_here
+  ```
+
+### 2. Install Dependencies:
+- Install the required Python packages:
+  ```bash
+  pip install -r requirements.txt
+  ```
+
+### 3. Run the Bot Locally:
+- Start the bot by running the script:
+  ```bash
+  python app.py
+  ```
+- The bot will start polling and will respond to user messages in the Telegram app.
